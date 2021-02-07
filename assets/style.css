@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grad1 {
+   height: 900px;
+    background-color: rgb(250, 159, 217); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(253, 165, 224), rgb(109, 227, 253));
+  opacity: .7
+}
+
+  .name {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    font-size: 3em;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+  }
