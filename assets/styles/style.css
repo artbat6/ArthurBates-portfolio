@@ -5,16 +5,14 @@
 }
 
 #grad1 {
-  background-color: rgb(
-    255,
-    180,
-    226
-  ); 
-  background-image: linear-gradient(rgb(252, 157, 219), rgb(109, 227, 253));
+
+  height:100%;
+  background-color:rgb(133, 205, 247);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat
 }
 
 /* Header section */
@@ -82,15 +80,18 @@ header nav ul li a {
 
 /*project section below*/
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px 40px;
-  justify-content: center;
+#my-projects {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap
 }
 
 .projects {
-    margin: 20px
+    width: 200px;
+    height: 200px;
+    margin:20px;
 }
 
 .projects img {
@@ -100,7 +101,7 @@ header nav ul li a {
   box-shadow: 10px 10px 5px rgb(155, 154, 154);
 }
 
-/* end difficult project area*/
+/* end project area*/
 
 .projects p {
   color: white;
@@ -117,145 +118,67 @@ footer {
   padding: 40px 35px;
 }
 footer h2 {
-  color: rgb(254, 159, 221);
+  color: white;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
 }
 
-
+section div:first-child {
+    width: 250px;
+    height: 250px; 
+    }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 /* this will be applied on any screen smaller than 980px */
 
 @media screen and (max-width: 980px) {
-    #grad1 {
-        background-image: linear-gradient(green, yellow)
-    }
-    
-    
-      
-    header {
-        height: 180px;
-        width: 100%;
-    }
 
-    header h1 {
-        padding-top: 30px;
-        font-size: 70px;
-        line-height: .8;
-    }
-    
     header nav ul {
-        font-size: 12px;
-        display:flex;
-        flex-direction: row;
-        align-content: right;
-        width: auto;
-        padding-right: 20px;
-     }
-    
-    header nav ul li a {
-      font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-evenly
     }
-
-    .hero img {
-        height: 160px
-    }
-
-    .intro {
-        font-size: 20px; 
-    }
-
+       
     footer {
-        justify-content: center;
+        justify-content: space-evenly;
+       }
+
+       
     }
-    footer h2{
-        font-size:30px;
-    }
-}
+
+
+
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
 
-     #grad1 {
-            background-image: linear-gradient(rgb(252, 157, 219), rgb(109, 227, 253));
-     }
-     .flex-container {
-        display: flex;
-        
-        flex-wrap: wrap;
-        padding: 0px 40px;
-        justify-content: space-evenly;
-      }
-      
-      .projects {
-          margin: 20px
-      }
-      
-      .projects img {
-        width: 100%;
-        border: solid white;
-        border-radius: 10px;
-        box-shadow: 10px 10px 5px rgb(155, 154, 154);
-      }
-      }
-
-     header nav ul {
-        font-size: 12px;
+    #my-projects {
         display:flex;
-        flex-direction: row;
-        align-content: right;
-        width: auto;
-        padding-right: 20px;
-     }
-     header nav ul li a {
-        font-size: 26px;
-      }
-      .hero {
-        display: flex;
-        width: 100%;
-        color: white;
-        font-family: "Source Sans Pro", sans-serif;
-      }
-      .hero img {
-        height: 150px;
-        margin-left: 40px;
-      }
-      .intro {
-          font-size: 10
-      }
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .projects {
+        height:250px;
+        width: 250px;
+      
+        object-fit:cover;
+        margin:20px;}
 
+        section div:first-child {
+            width: 300px;
+            height: 300px; 
+        }
+
+       
+
+}
 
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px){
-
-    #grad1 {
-        background-image: linear-gradient(green, yellow)
-    }
-
-    header nav ul {
-        font-size: 12px;
-        display:flex;
-        flex-direction: row;
-        align-content: right;
-        width: auto;
-    }
-
-    .intro {
-        font-size: 20px; 
-    }
-
-    .hero {
-        display: flex;
-        width: 550px;
-        color: white;
-        font-family: "Source Sans Pro", sans-serif;
-        align-items: space-between;
-      }
-      .hero img {
-        height: 100px;
-        margin-left: 40px;
-      }
+@media screen and (max-width: 575px) {
 
 }
